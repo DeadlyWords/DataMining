@@ -53,9 +53,9 @@ print("Time for 1000 = " + str(nachTausend - vorTausend))
 # plt.show()
 
 try:
-    with open("outXiro.bin", 'wb') as file:
+    with open("outXiro.txt", 'w') as file:
         for number in random_numbers:
-            file.write((number).to_bytes(24, byteorder='big', signed=False))
-            # file.write(str(number) + "\n")
+            #file.write((number).to_bytes(24, byteorder='big', signed=False))
+            file.write(str(number) + "\n")
 except Exception as e:
     print(e)
