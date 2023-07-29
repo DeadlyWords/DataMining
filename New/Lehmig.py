@@ -27,13 +27,14 @@ class LehmerRandomGenerator:
 
 
 # Example usage:
-random_generator = LehmerRandomGenerator(seed=1234)
+random_generator = LehmerRandomGenerator(seed=425172342)
 
 vorTausend = time.perf_counter()
 print("Before 1000 = ", vorTausend)
 
-random_numbers = [random_generator.generate_uniform() for _ in range(1000000)]
+random_numbers = [random_generator.generate_uniform() for _ in range(30000000)]
 
+print(len(random_numbers))
 nachTausend = time.perf_counter()
 print("After 1000 = ", nachTausend)
 print("Time for 1000 = " + str(nachTausend - vorTausend))
@@ -88,8 +89,9 @@ print("Time for 1000 = " + str(nachTausend - vorTausend))
 # plt.show()
 
 try:
-    with open("outLehmer.txt", 'wb') as file:
+    with open("outLehmer.txt", 'w') as file:
         for number in random_numbers:
-            file.write((number).to_bytes(24, byteorder='big', signed=False))
+            #file.write((number).to_bytes(24, byteorder='big', signed=False))
+            file.write(str(number) + "\n")
 except Exception as e:
     print(e)

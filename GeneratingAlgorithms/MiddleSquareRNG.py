@@ -17,7 +17,7 @@ def middle_square(seed, iterations):
     return random_numbers
 
 # Set the initial seed
-seed = 1234
+seed = 636774378
 
 vorTausend = time.perf_counter()
 print("Before 1000 = ", vorTausend)
