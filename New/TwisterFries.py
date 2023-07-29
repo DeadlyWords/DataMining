@@ -73,9 +73,17 @@ nachTausend = time.perf_counter()
 print("After 1000 = ", nachTausend)
 print("Time for 1000 = " + str(nachTausend - vorTausend))
 
-for number in random_numbers:
-    print(number)
+# for number in random_numbers:
+#     print(number)
 
-plt.figure(figsize=(15, 8))
-plt.hist(random_numbers, edgecolor="red", bins=len(random_numbers))
-plt.show()
+# plt.figure(figsize=(15, 8))
+# plt.hist(random_numbers, edgecolor="red", bins=len(random_numbers))
+# plt.show()
+
+try:
+    with open("outLehmer.txt", 'w') as file:
+        for number in random_numbers:
+            # file.write((number).to_bytes(24, byteorder='big', signed=False))
+            file.write(str(number) + "\n")
+except Exception as e:
+    print(e)

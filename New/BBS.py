@@ -56,11 +56,19 @@ biggestInt = max(random_numbers)
 
 distribution = (biggestInt + 1) * [0]
 
-print(len(distribution))
-print(len(random_numbers))
+# print(len(distribution))
+# print(len(random_numbers))
 
 for i in range(len(random_numbers)):
     distribution[random_numbers[i]] += 1
 
-plt.plot(distribution)
-plt.show()
+# plt.plot(distribution)
+# plt.show()
+
+try:
+    with open("outLehmer.txt", 'w') as file:
+        for number in random_numbers:
+            # file.write((number).to_bytes(24, byteorder='big', signed=False))
+            file.write(str(number) + "\n")
+except Exception as e:
+    print(e)
