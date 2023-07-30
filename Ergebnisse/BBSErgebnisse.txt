@@ -2,7 +2,7 @@
 #            dieharder version 3.31.1 Copyright 2003 Robert G. Brown          #
 #=============================================================================#
    rng_name    |           filename             |rands/second|
-     file_input|                      outBBS.txt|  1.35e+07  |
+     file_input|                BlumBlumShub.txt|  1.35e+07  |
 #=============================================================================#
         test_name   |ntup| tsamples |psamples|  p-value |Assessment
 #=============================================================================#
