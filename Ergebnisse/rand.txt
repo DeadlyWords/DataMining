@@ -1,0 +1,31 @@
+#=============================================================================#
+#            dieharder version 3.31.1 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |rands/second|   Seed   |
+           rand|  3.12e+08  |2452253573|
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+   diehard_birthdays|   0|       100|     100|0.31684700|  PASSED  
+      diehard_operm5|   0|   1000000|     100|0.45032094|  PASSED  
+  diehard_rank_32x32|   0|     40000|     100|0.83710297|  PASSED  
+    diehard_rank_6x8|   0|    100000|     100|0.00000000|  FAILED  
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED  
+        diehard_opso|   0|   2097152|     100|0.00000000|  FAILED  
+        diehard_oqso|   0|   2097152|     100|0.00000000|  FAILED  
+         diehard_dna|   0|   2097152|     100|0.00000000|  FAILED  
+diehard_count_1s_str|   0|    256000|     100|0.00000000|  FAILED  
+diehard_count_1s_byt|   0|    256000|     100|0.00000000|  FAILED  
+ diehard_parking_lot|   0|     12000|     100|0.86244831|  PASSED  
+    diehard_2dsphere|   2|      8000|     100|0.21260669|  PASSED  
+    diehard_3dsphere|   3|      4000|     100|0.65541804|  PASSED  
+     diehard_squeeze|   0|    100000|     100|0.11010544|  PASSED  
+        diehard_sums|   0|       100|     100|0.97462346|  PASSED  
+        diehard_runs|   0|    100000|     100|0.97861529|  PASSED  
+        diehard_runs|   0|    100000|     100|0.16870489|  PASSED  
+       diehard_craps|   0|    200000|     100|0.99313301|  PASSED  
+       diehard_craps|   0|    200000|     100|0.12709527|  PASSED  
+ marsaglia_tsang_gcd|   0|  10000000|     100|0.00000000|  FAILED  
+ marsaglia_tsang_gcd|   0|  10000000|     100|0.00000000|  FAILED  
+         sts_monobit|   1|    100000|     100|0.00610887|  PASSED  
+            sts_runs|   2|    100000|     100|0.05159295|  PASSED

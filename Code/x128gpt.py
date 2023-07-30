@@ -37,17 +37,26 @@ class Xoroshiro128Plus:
         return result
 
 # Example usage:
-rng = Xoroshiro128Plus(12345)
+rng = Xoroshiro128Plus(2151616712)
 
 vorTausend = time.perf_counter()
 print("Before 1000 = ", vorTausend)
 
-random_numbers = rng.generate(1000)
-print(random_numbers)
+
+random_numbers = rng.generate(30000000)
+#print(random_numbers)
 
 nachTausend = time.perf_counter()
 print("After 1000 = ", nachTausend)
 print("Time for 1000 = " + str(nachTausend - vorTausend))
 
-plt.plot(duration)
-plt.show()
+# plt.plot(duration)
+# plt.show()
+
+try:
+    with open("outXiro.txt", 'w') as file:
+        for number in random_numbers:
+            #file.write((number).to_bytes(24, byteorder='big', signed=False))
+            file.write(str(number) + "\n")
+except Exception as e:
+    print(e)

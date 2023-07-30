@@ -67,7 +67,7 @@ print("Before 1000 = ", vorTausend)
 
 # Example usage
 mt = MersenneTwister(1234)
-random_numbers = [mt.extract_number() for _ in range(1000000)]
+random_numbers = [mt.extract_number() for _ in range(30000000)]
 
 nachTausend = time.perf_counter()
 print("After 1000 = ", nachTausend)
@@ -81,7 +81,7 @@ print("Time for 1000 = " + str(nachTausend - vorTausend))
 # plt.show()
 
 try:
-    with open("outLehmer.txt", 'w') as file:
+    with open("outMT.txt", 'w') as file:
         for number in random_numbers:
             # file.write((number).to_bytes(24, byteorder='big', signed=False))
             file.write(str(number) + "\n")
